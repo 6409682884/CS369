@@ -1,54 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>CS369_6409682884</title>
-    </head>
-    <body>
-        <!-- <pre> ตั้งใจให้ทำการแสดงข้อความที่เมื่อพิมพ์อะไรลงไปเช่น เว้นวรรค ขึ้นบรรทัดใหม่ หรือพิมพ์อะไรลงไปใน tag นี้ก็แสดงข้อความตามจริง
-            ต่างจาก <p> ที่เมื่อขึ้นพิมพ์บรรทัดใหม่ใน tag การแสดงผลก็ยังคงอยู่บรรทัดเดียวกัน -->
-        <pre>
-            L          TE
-            A       A
-                C    V
-                R A
-                DOU
-                LOU                   CS369
-                REUSE
-                QUE TU
-                PORTES
-            ET QUI T'
-            ORNE O CI
-            VILISÉ
-            OTE-  TU VEUX
-            LA    BIEN
-            SI      RESPI
-                    RER       - Apollinaire
-        </pre>
-        <!-- <ruby> ที่ใช้ร่วมกับ <rt> ตั้งใจให้มีข้อความเล็กๆอยู่ด้านบนด้วย tag <rt> -->
-        <ruby> PP <rt>Saksorn</rt> </ruby>
-        <br/>
-        <br/>
-        <!-- tag <q> คือเป็นการใส่เครื่องหมาย quote ให้ข้อความใน tag โดยสามารถใส่อ้างอิงได้ด้วย attribute cite -->
-        <q cite="https://www.imdb.com/title/tt0062622/quotes/?item=qt0396921&ref_=ext_shr_lnk">
-            I'm sorry, Dave. I'm afraid I can't do that.
-        </q>
-        <br/>
-        <br/>
-        <!-- <optgroup> ตั้งใจให้ทำการจัดกลุ่มจัดหมวดของตัวเลือกให้คนที่ใช้งานใช้ได้ง่ายเจอตัวเลือกง่ายขึ้น-->
-        <select id="select-prefix">
-            <option> - </option>
-            <optgroup label="ผู้ชาย">
-                <option>ด.ช.</option>
-                <option>นาย</option>
-            </optgroup>
-            <optgroup label="ผู้หญิง">
-                <option>ด.ญ.</option>
-                <option>นางสาว</option>
-                <option>นาง</option>
-            </optgroup>
-        </select>
-        <br/>
-        <br/>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DDE6ED;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #27374D;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: orange;
+            text-decoration: none;
+        }
+
+        section {
+            border: 1px solid #ccc;
+            color: #fff;
+            background-color: #526D82;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .picture {
+
+            margin-bottom: 20px;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .about-container img {
+            flex: 0 0 auto;
+            margin-right: 20px;
+        }
+
+        .aboutme {
+            margin-top: 0;
+        }
+
+        .param {
+            margin-top: 0;
+        }
+
+        #myBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #9DB2BF;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 20px;
+            font-size: 18px;
+            text-decoration-line: none;
+        }
+
+        #myBtn:hover {
+            background-color: #27374D;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1>My Introduction</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="about-container">
+            <img width="300px" src="./images/myimage.jpg" alt="saksorn">
+            <div>
+                <h2 class="aboutme">About Me</h2>
+                <p class="param">ยินดีต้อนรับสู่หน้าเพจแนะนำตัวของผม! <br>
+                    สวัสดีครับ ผมศักย์ศรณ์ สวัสดีรักษา ชื่อเล่น พีพี เกิดที่จังหวัดลพบุรี แต่ย้ายมาอยู่จังหวัดปทุมธานีมาตั้งแต่เริ่มจำความได้ <br> 
+                    ปัจจุบันผมเป็นนักศึกษา ศึกษาอยู่ที่มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต ชั้นปีที่ 3 เทอม 2 ในคณะวิทยาศาสตร์และเทคโนโลยี <br>
+                    สาขาวิทยาการคอมพิวเตอร์ ส่วนงานอดิเรกที่ผมชอบทำเป็นประจำคือดูหนังไม่ก็เล่นเกมเพื่อผ่อนคลายหลังทำการบ้านเหนื่อยๆ <br> 
+                    นอกจากเรื่องที่ทำเพื่อผ่อนคลาย ผมก็ยังมีงานอดิเรกคือเรียนรู้สิ่งใหม่ๆเช่น การดูยูทูปหาความรู้เพิ่มเติมทั้งเรื่องเกี่ยวกับเรื่องเรียนและ<br>
+                    ทั้งเรื่องความรู้รอบตัว ผมชอบที่จะเรียนรู้สิ่งใหม่ๆที่ไม่เคยรู้มาก่อน และชอบท้าทายตัวเองด้วยการลองทำสิ่งใหม่อยู่เสมอๆ
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pictures">
+        <h2>Pictures</h2>
+        <div class="picture">
+            <p>วิดีโอด้านล่างนี้คือรวมรูปภาพสวยๆที่ผมได้ถ่ายตอนไปเที่ยววันเดย์ทริปกับทางสาขาและเพื่อนๆในสาขาวิทยาการคอมพิวเตอร์</p>
+            <video width="960" controls>
+                <source src="./VDOs/myVDOs.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: saksorn.saw@dome.tu.ac.th</p>
+        <p>Phone: 098-385-9907</p>
+    </section>
+    <a id="myBtn" title="Go to top" href="#header">Top</a>
+</body>
+
 </html>
